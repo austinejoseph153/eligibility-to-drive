@@ -41,6 +41,13 @@ function checkEligibility(e){
     // input validation starts here
     
     // check if age input is a valid number
+
+    // check if the age field is non empty
+    if(!age){
+        var message = "age field must not be empty"   // message to be displayed to user
+        displayResult(result,error,info,message=message,status="error")
+        return false
+    }
     if(isNaN(age)){
         var message = "age must be a number!"   // message to be displayed to user
         displayResult(result,error,info,message=message,status="error")
@@ -53,7 +60,6 @@ function checkEligibility(e){
         displayResult(result,error,info,message=message,status="error")
         return false
     }
-    
     // input validation ends here
 
     // if age is greater than 70 then the user is not eligible to drive
