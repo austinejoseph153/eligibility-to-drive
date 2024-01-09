@@ -8,10 +8,19 @@
     <title>users eligibility to drive</title>
 </head>
 <body>
+    <!-- NAVIGATION -->
+    <div class="navbar shadow">
+        <div class="container p-0">
+            <h3 class="navbar-brand">Gtechsolution</h3>
+        </div>
+    </div>
+    <!-- NAVIGATION ENDS HERE -->
+
+    <!-- CONTENTS -->
     <div id="wrapper">
         <div class="container">
-            <form class="card mt-5 p-3 shadow" name="eligibility-form" onsubmit="checkEligibility(event)">
-                <h2 class="header text-center p-2 bg-primary text-white mb-3">check your eligibility to drive</h2>
+            <form class="card shadow" name="eligibility-form" onsubmit="checkEligibility(event)">
+                <h2 class="header text-center bg-primary text-white mb-3">check your eligibility to drive</h2>
                 <div class="form-group mt-3">
                     <input type="text" name="age" id="age" class="form-control" placeholder="Enter your age" required autocomplete="off">
                     <p class="form-text">Age must be a number greater than zero</p>
@@ -20,11 +29,22 @@
                 <div class="alert alert-danger d-none" id="error"></div>
                 <div class="alert alert-info d-none" id="info"></div>
                 <div class="form-group">
-                <button type="submit" class="btn btn-lg btn-outline-primary">check eligibilty</button>
+                <button type="submit" class="btn btn-md btn-outline-primary mt-3">check eligibilty</button>
                 </div>
             </form>
         </div>
     </div>
+    <!-- CONTENTS ENDS HERE -->
+
+    <!-- FOOTER -->
+    <div class="footer shadow">
+        <div class="container p-0 text-center">
+            <p>This is a product of gtechsolution</p>
+            <p>&copy; 2023</p>
+        </div>
+    </div>
+    <!-- FOOTER ENDS HERE -->
+    
     <script src="../static/js/main.js"></script>
 </body>
 </html>

@@ -59,7 +59,7 @@ function validateInput(age){
     
     // check if age input is less than zero
     else if (age <= 0){
-        var message = "Age must not be less that or equal to zero!"
+        var message = "Age must not be less than or equal to zero!"
         validated = false
     }
     else{
